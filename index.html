@@ -1,218 +1,413 @@
-<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Ammiel's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<!-- ammielbowen.com | v2.0 -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ammiel Bowen | Software engineer, backend and machine learning</title>
+	<meta name="description" content="Computer science student at Florida State University building backend systems and machine learning tools. Transcript platform for FSU Admissions, a training system at a NASA contractor, and neural network research.">
+	<meta name="theme-color" content="#782f40">
+	<link rel="canonical" href="https://ammielbowen.com/">
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Ammiel Bowen | Software engineer, backend and machine learning">
+	<meta property="og:description" content="Backend systems and machine learning tools. Computer science at Florida State University, graduating May 2027.">
+	<meta property="og:url" content="https://ammielbowen.com/">
+	<meta property="og:image" content="https://ammielbowen.com/og-image.jpg">
+	<meta name="twitter:card" content="summary_large_image">
 
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>Ammiel Bowen</h1>
-							<p class="major">Nice to meet you!</p>
-							<ul class="actions stacked">
-								<li><a href="#first" class="button big wide smooth-scroll-middle">About Me</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/gallery/Pictures/Headshot 1.jpg" alt="" />
-						</div>
-					</section>
+	<link rel="icon" href="favicon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="preload" href="assets/fonts/ibm-plex-serif-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="assets/fonts/ibm-plex-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="stylesheet" href="assets/css/site.css">
+	<script>document.documentElement.classList.add('js');</script>
 
-				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>About Me</h2>
-							<p>I am a Sophomore at Florida State University pursing a combined BS/MS in computer science. 
-							   I'm challenging myself everyday, both academically and personally in forms of learning and working out respectively.
-							   I believe that with consistent work, comes progress, eventually leading to success no matter what scenario.</p>
-							<ul class="actions stacked">
-								<li><a href="https://www.linkedin.com/in/ammielbowen" class="button" target="_blank">LinkedIn</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/gallery/Pictures/Amazon Mini-Hackathon.jpg" alt="" />
-						</div>
-					</section>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": "Ammiel Bowen",
+		"url": "https://ammielbowen.com/",
+		"jobTitle": "Software engineer",
+		"alumniOf": { "@type": "CollegeOrUniversity", "name": "Florida State University" },
+		"sameAs": [
+			"https://www.linkedin.com/in/ammielbowen",
+			"https://github.com/Amm1el"
+		]
+	}
+	</script>
+</head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
 
-				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Passion</h2>
-							<p>My goal is to secure a Machine Learning position at an established company dedicating their resources to computational
-							   neuroscience. I aspire to leverage this experience to found a company integrating neuroscience into advanced augmented
-							   reality technology, simultaneously pushing the boundaries of both health and entertainment.</p>
-							<ul class="actions stacked">
-								<li><a href="https://drive.google.com/file/d/1kzgMvbN2PdoY1b0MIsHKHN0KCr58N7_F/view?usp=sharing" class="button" target="_blank">Resume</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/gallery/Pictures/First GBM.jpg" alt="" />
-						</div>
-					</section>
+	<header class="site-header">
+		<div class="bar">
+			<a class="wordmark" href="#top">Ammiel Bowen</a>
+			<button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+			<nav class="nav" id="site-nav" aria-label="Primary">
+				<a href="#about">About</a>
+				<a href="#experience">Experience</a>
+				<a href="#projects">Projects</a>
+				<a href="#achievements">Achievements</a>
+				<a href="#leadership">Leadership</a>
+				<a href="#skills">Skills</a>
+				<a href="#contact">Contact</a>
+				<a class="nav-resume" href="resume/Ammiel_Bowen_Professional_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+			</nav>
+		</div>
+	</header>
 
-				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Immediate Goals</h2>
-							<p> - Develop a software from scratch with mobile and web interfaces.
-							<br>- Leverage Agile methodology to maximize my contributions in all works.
-							<br>- Obtain data structures & algorithms knowledge to score high in all interviews</p>
-							<ul class="actions stacked">
-								<li><a href="https://github.com/Amm1el"  class="button" target="_blank">Github</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/gallery/Pictures/Theta Tau Class Picture.jpg" alt="" />
-						</div>
-					</section>
+	<main id="main">
 
-				<!-- Five -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Projects</h2>
-							<p>Throughout my tenure as a computer science student, I have dedicated countless hours to perfecting my craft.
-							   Here is a glimpse of the projects I have created to continue honing my skills.</p>
-						</div>
-
-						<!-- Gallery -->
-							<div class="gallery style2 medium lightbox onscroll-fade-in">
-								<article>
-									<a href="images/gallery/Large/CyberSecurityInvestigation.png" class="image">
-										<img src="images/gallery/Small/CyberSecurityInvestigation.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3></h3>
-										<p></p>
-										<ul class="actions fixed">
-											<li><a href="https://docs.google.com/presentation/d/15lT_VxEINfjR95fAxa8exqhptptYxiPa0qsd-g8eHts/edit?usp=sharing" class="button small" target="_blank">Details</a></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/Large/AI-Flashcards.png" class="image">
-										<img src="images/gallery/Small/AI-Flashcards.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>AI Flashcards</h3>
-										<p></p>
-										<ul class="actions fixed">
-											<li><a href="https://ai-flashcards-black.vercel.app/" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/Large/inventory-tracker.png" class="image">
-										<img src="images/gallery/Small/inventory-tracker.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>A web-based Inventory Tracker</h3>
-										<p></p>
-										<ul class="actions fixed">
-											<li><a href ="https://inventory-tracker-delta.vercel.app/" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>
-								<article>
-									<a href="images/gallery/Large/chatbot2.png" class="image">
-										<img src="images/gallery/Small/chatbot.png" alt="" />
-									</a>
-									<div class="caption">
-										<h3>A generative Computational Neuroscience Chatbot</h3>
-										<p></p>
-										<ul class="actions fixed">
-											<li><a href ="https://youtu.be/XsZQaDHMvXk" class="button small">Details</a></li>
-										</ul>
-									</div>
-								</article>
-
-							</div>
-
-					</section>
-
-				<!-- Six -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Career Highlights</h2>
-							<p>Although I strive to remain future-focused, I recgonize the importance of celebrating past achievements.
-							   This acknowledging is essential to understand growth. This is a testament to milestones I have reached,
-							   as they all represent a step forward in the right direction.</p>
-							<div class="items style1 medium onscroll-fade-in">
-								<section>
-									<span class="icon style2 major icon-amazon"></span>
-									<h3>February 28<sup>th</sup> 2024<br>First Mini-Hackathon</h3>
-									<p>I competed in a Amazon sponosored mini-hackathon,
-									   winning first place by coming up with the 'next big amazon idea'.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-user"></span>
-									<h3>April 21<sup>st</sup> 2024<br>Leadership Position</h3>
-									<p>Announced as the Vice President of the campus organization 'Codeducation' for the 2024-2025 School Year.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-wifi"></span>
-									<h3>May 7<sup>th</sup> 2024<br>CodePath Completion</h3>
-									<p>I delved out of my comfort zone and completed the CodePath course Intermediete Cybersecurity with honors.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-check-circle"></span>
-									<h3>July 3<sup>rd</sup> 2024<br>Program Acceptances</h3>
-									<p>Was accepted into the presitigious FSU Honors program, along with the Undergraduate Research Opportunity program.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-laptop-code"></span>
-									<h3>July 9<sup>th</sup> 2024<br>SWE Fellowship</h3>
-									<p>Began taking part in a Software Engineering Fellowship, growing my resume with like-minded individuals geared towards success</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-brain"></span>
-									<h3>September 25<sup>th</sup> 2024<br>First Technical Position</h3>
-									<p>Began position as research assistant in the Dept. of Computer Science analyzing the relationship between GNNs and Brain Networks</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-gear"></span>
-									<h3>November 16<sup>th</sup> 2024<br>Joined Theta Tau</h3>
-									<p>Was inducted into the Largest, Oldest, and Foremost Engineering Fraternity, developing relations with future leaders in engineering</p>
-								</section>
-							</div>
-						</div>
-					</section>
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://www.instagram.com/ammielbowen/" class="icon brands style2 fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.linkedin.com/in/ammielbowen" class="icon brands style2 fa-linkedin-in" target="_blank"> <span class="label">LinkedIn</span></a></li>
-								<li><a href="https://www.github.com/Amm1el" class="icon brands style2 fa-github" target="_blank"><span class="label">github</span></a></li>
-								<li><a href="mailto:your-ammielbowen@gmail.com" class="icon style2 fa-envelope" target="_blank"><span class="label">Email</span></a></li>
-							</ul>
-							<p>&copy; 2024 Ammiel Bowen | v1.0.0 | Coming Soon</p>
-						</div>
-					</footer>
-
+		<!-- Hero -->
+		<section class="hero on-garnet" id="top" aria-labelledby="hero-title">
+			<div class="hero-grid">
+				<div class="hero-copy">
+					<h1 id="hero-title"><span>Ammiel</span> <span>Bowen</span></h1>
+					<p class="lead">I build backend systems and machine learning tools.</p>
+					<p class="intro">I'm a computer science student at Florida State University, graduating May 2027. I built the transcript platform FSU Admissions staff use, and I'm building a training system at a NASA contractor.</p>
+					<div class="hero-actions">
+						<a class="btn btn-gold" href="resume/Ammiel_Bowen_Professional_Resume.pdf" target="_blank" rel="noopener">Professional resume</a>
+						<a class="btn btn-outline" href="resume/Ammiel_Bowen_School_Resume.pdf" target="_blank" rel="noopener">School resume</a>
+					</div>
+					<p class="hero-links">
+						<a href="mailto:ammielbowen@gmail.com">Email me</a>
+						<a href="https://github.com/Amm1el" target="_blank" rel="noopener">GitHub</a>
+						<a href="https://www.linkedin.com/in/ammielbowen" target="_blank" rel="noopener">LinkedIn</a>
+					</p>
+				</div>
+				<figure class="hero-photo">
+					<img src="images/ammiel-portrait.webp" width="1100" height="1294" fetchpriority="high"
+						alt="Ammiel Bowen smiling in a garnet suit and black tie, standing under oak trees draped in Spanish moss">
+				</figure>
 			</div>
+		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- About -->
+		<section class="section" id="about" aria-labelledby="about-title">
+			<div class="wrap split">
+				<h2 id="about-title">About</h2>
+				<div class="prose">
+					<p>I push myself every day, in what I learn and in the gym. I believe consistent work produces progress in any situation, and I try to hold myself to that at school, at work, and in the organizations I lead.</p>
+					<p>I want to work on machine learning at a company applying computational neuroscience, and eventually start a company that brings neuroscience into augmented reality for health and entertainment. Right now I'm looking for industry roles in backend and AI/ML engineering.</p>
+				</div>
+			</div>
+		</section>
 
-	</body>
+		<!-- Experience -->
+		<section class="section alt" id="experience" aria-labelledby="experience-title">
+			<div class="wrap split">
+				<h2 id="experience-title">Experience</h2>
+				<div>
+
+					<article class="entry">
+						<h3>Special Projects Developer</h3>
+						<p class="org">Information Technology Services, Florida State University</p>
+						<p class="meta"><span>August 2025 to present</span><span>Tallahassee, FL</span></p>
+
+						<dl class="facts">
+							<div><dt>Admissions staff use it</dt><dd>50+</dd></div>
+							<div><dt>Transcripts submitted</dt><dd>10,000+</dd></div>
+							<div><dt>Institutions in the search index</dt><dd>54,000+</dd></div>
+							<div><dt>To update a transcript, down from minutes</dt><dd>Under 30 sec</dd></div>
+						</dl>
+
+						<ul>
+							<li>Engineered a full-stack transcript management system for FSU's Office of Admissions, replacing a manual workflow.</li>
+							<li>Built a searchable submissions dashboard, multi-chart analytics (Recharts), role-based access control (Admin, Technician, Viewer), an admin activity log with full CRUD audit trails, multi-document support, and destination-aware ID validation (EMPLID, SLATE Apply/Connect).</li>
+							<li>The system was showcased to the Provost in executive FSU meetings and presented at the 2026 ITS RISE Showcase. <a href="#transcripter">Read the project write-up</a>.</li>
+						</ul>
+
+						<figure class="flow-figure">
+							<ol class="flow">
+								<li>
+									<strong>React (Vite) frontend</strong>
+									<span>Submission form, searchable dashboard, Recharts analytics</span>
+								</li>
+								<li>
+									<strong>Node.js and Express REST API</strong>
+									<span>Role-based access, ID validation, audit log</span>
+								</li>
+								<li>
+									<strong>MongoDB with GridFS</strong>
+									<span>Transcript records and stored PDFs</span>
+								</li>
+							</ol>
+							<figcaption>How a request moves through the transcript system.</figcaption>
+						</figure>
+					</article>
+
+					<article class="entry">
+						<h3>Software Engineer Intern</h3>
+						<p class="org">Bastion Technologies, a NASA contractor</p>
+						<p class="meta"><span>May 2025 to present</span><span>Remote</span></p>
+						<ul>
+							<li>Designing a scalable management training system for NASA using Power Apps, Power Automate, and SharePoint. Leadership can prioritize tasks, run structured development programs, and track employee progress through automated workflows, targeting 500+ users across the agency.</li>
+							<li>Developing the platform for eventual NASA-wide deployment with a 5-person engineering team, standardizing training processes and tracking effectiveness through Power Platform analytics.</li>
+							<li>Produced end-user onboarding materials for the platform, including a full video walkthrough script and a comprehensive HTML tooltip reference.</li>
+						</ul>
+					</article>
+
+					<article class="entry">
+						<h3>Research Assistant</h3>
+						<p class="org">Department of Computer Science, Florida State University, with Dr. Yushun Dong</p>
+						<p class="meta"><span>September 2024 to July 2025</span><span>Tallahassee, FL</span></p>
+						<ul>
+							<li>Researched integrating Deep Graph Infomax (DGI) with Temporal Convolutional Networks (TCNs) to improve seizure prediction by modeling both structural and temporal neural connectivity.</li>
+							<li>Converted EEG recordings into functional brain networks, with EEG channels as nodes and edges from Pearson correlation and mutual information, and used DGI for unsupervised node embeddings.</li>
+							<li>Implemented graph-based feature extraction and temporal sequence learning in PyTorch and evaluated the model against single-GNN models. Preliminary results showed accuracy in the mid-70% range, with higher F1 and AUC scores.</li>
+							<li>Summarized the work in a 2025 Undergraduate Research Opportunity Program poster. <a href="docs/UROP-2025-Seizure-Prediction-Poster.pdf">View the poster (PDF)</a>.</li>
+						</ul>
+					</article>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Projects -->
+		<section class="section" id="projects" aria-labelledby="projects-title">
+			<div class="wrap split">
+				<h2 id="projects-title">Projects</h2>
+				<div>
+					<p class="section-intro">Research, personal, and course projects. The FSU and Bastion work is described under Experience.</p>
+					<div class="projects">
+
+						<article class="project" id="transcripter">
+							<div class="shot">
+								<img src="images/projects/transcripter-poster.webp" width="1500" height="1125" loading="lazy"
+									alt="Poster titled Transcript Management and Processing System, with sections on the abstract, dashboard, analytics, key aspects, capabilities, and next steps">
+							</div>
+							<div class="body">
+								<h3>Transcripter: Transcript Management and Processing System</h3>
+								<p>An internal FSU IT Services system built for the Office of Admissions. It replaces fragmented, manual transcript processing with a structured workflow. Staff submit transcript records, track processing progress, and manage employee roles, and administrators get an analytics view of submission trends and processing activity.</p>
+								<p>Key features: role-based access control, a submission form with dynamic validation, a real-time dashboard where staff sort, filter, and manage records, a log of every create, edit, and delete, multi-document support, and admin tools for managing users.</p>
+								<p>The hard parts were keeping audit logs accurate across every action, handling sensitive information securely, building interfaces staff find intuitive, and designing a flexible role-based system. Next on the list: automated document processing, integration with more university systems, better search and filtering, richer activity monitoring, and reporting tools for administrators.</p>
+								<p class="stack">React, Vite, JavaScript, CSS, Node.js, Express, MongoDB, REST API, GitHub</p>
+								<p class="links"><a href="docs/Transcripter-Poster.pdf">View the poster (PDF)</a></p>
+								<p class="stack">Internal FSU tool, not publicly available. The poster's dashboard screenshot is pixelated to protect applicant records. Results are under Experience.</p>
+							</div>
+						</article>
+
+						<article class="project">
+							<div class="shot">
+								<img src="images/projects/seizure-poster.webp" width="1500" height="1125" loading="lazy"
+									alt="Research poster titled Predicting Seizures using Graph Neural Networks, with sections on methodology, preliminary code, results, and conclusion">
+							</div>
+							<div class="body">
+								<h3>Predicting Seizures with Graph Neural Networks</h3>
+								<p>Undergraduate research with Dr. Yushun Dong in FSU's Department of Computer Science, documented in a 2025 Undergraduate Research Opportunity Program (UROP) poster. It tests whether combining graph neural network (GNN) models improves real-time seizure prediction from EEG.</p>
+								<p>EEG recordings become functional brain networks, with EEG channels as nodes and edges from Pearson correlation and mutual information. Deep Graph Infomax learns node embeddings, and a GNN-based temporal model extracts features over time. Preliminary results show accuracy in the mid-70% range, with better F1 and AUC scores than single-GNN models.</p>
+								<p class="stack">PyTorch, PyTorch Geometric, Deep Graph Infomax, EEG</p>
+								<p class="links"><a href="docs/UROP-2025-Seizure-Prediction-Poster.pdf">View the poster (PDF)</a></p>
+							</div>
+						</article>
+
+						<article class="project">
+							<div class="shot">
+								<img src="images/projects/neuroai-chatbot.webp" width="368" height="429" loading="lazy"
+									alt="NeuroAI chatbot answering a question about the Nernst equation with a detailed explanation">
+							</div>
+							<div class="body">
+							<h3>Computational Neuroscience Chatbot</h3>
+							<p>A retrieval-augmented generation (RAG) chatbot for computational neuroscience. A Node.js and AWS backend retrieves relevant material from a Pinecone vector database so answers are grounded in source text, and it orchestrates external API calls.</p>
+							<p class="stack">Node.js, AWS, Pinecone, RAG</p>
+							<p class="links"><a href="https://youtu.be/XsZQaDHMvXk" target="_blank" rel="noopener">Watch the demo</a></p>
+							</div>
+						</article>
+
+						<article class="project">
+							<div class="shot">
+								<img src="images/projects/smartcards.webp" width="1200" height="572" loading="lazy"
+									alt="SmartCards home page: an AI-powered flashcard generator with three feature summaries">
+							</div>
+							<div class="body">
+							<h3>SmartCards</h3>
+							<p>An AI-powered flashcard generator. Paste in your notes and it turns them into study flashcards you can open on any device. Built during the Headstarter AI Software Engineering Fellowship.</p>
+							<p class="links"><a href="https://ai-flashcards-black.vercel.app/" target="_blank" rel="noopener">Open the live site</a></p>
+							</div>
+						</article>
+
+						<article class="project">
+							<div class="shot">
+								<img src="images/projects/inventory-tracker.webp" width="1200" height="571" loading="lazy"
+									alt="Inventory Tracker dashboard showing quantity, item, addition, and deletion totals with a recent activity panel">
+							</div>
+							<div class="body">
+							<h3>Inventory Tracker</h3>
+							<p>A web-based inventory tracker with item search, running totals for quantity, items, additions, and deletions, and a recent-activity log. Built during the Headstarter AI Software Engineering Fellowship.</p>
+							<p class="links"><a href="https://inventory-tracker-delta.vercel.app/" target="_blank" rel="noopener">Open the live site</a></p>
+							</div>
+						</article>
+
+						<article class="project">
+							<div class="shot">
+								<img src="images/projects/cyber-investigation.webp" width="1147" height="638" loading="lazy"
+									alt="Title slide: Analyzing Open Source Dataset, UI Prompt For Credentials Function, CYB 102 Intermediate Cybersecurity">
+							</div>
+							<div class="body">
+							<h3>Cybersecurity Investigation</h3>
+							<p>An analysis of an open-source dataset examining a UI prompt for a credentials function, written for CodePath's Intermediate Cybersecurity course (CYB 102), which I completed with honors.</p>
+							<p class="links"><a href="https://docs.google.com/presentation/d/15lT_VxEINfjR95fAxa8exqhptptYxiPa0qsd-g8eHts/edit?usp=sharing" target="_blank" rel="noopener">View the slides</a></p>
+							</div>
+						</article>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Achievements -->
+		<section class="section alt" id="achievements" aria-labelledby="achievements-title">
+			<div class="wrap split">
+				<h2 id="achievements-title">Achievements</h2>
+				<div class="achv">
+
+						<h3>Professional</h3>
+						<ul class="wins">
+							<li><div class="where">FSU Office of Admissions</div><div><strong>Cut transcript updates from minutes to under 30 seconds</strong>The transcript system I built now holds 10,000+ submitted transcripts and is used by 50+ Admissions staff.</div></li>
+							<li><div class="where">FSU executive meetings</div><div><strong>Transcript system showcased to the Provost</strong>Shown in executive FSU meetings.</div></li>
+							<li><div class="where">FSU ITS, 2026</div><div><strong>Presented at the 2026 ITS RISE Showcase</strong>Presented the Transcripter, an internal system built for the Office of Admissions.</div></li>
+							<li><div class="where">Bastion Technologies</div><div><strong>Building a training system for NASA</strong>Designing a Power Platform system that targets 500+ users across the agency, with a 5-person engineering team.</div></li>
+							<li><div class="where">SGA, May 2026 to present</div><div><strong>Chair of the RSO Allocation Committee</strong>Allocating over $100,000 per semester across FSU's 750+ registered student organizations.</div></li>
+							<li><div class="where">Kappa Alpha Psi, April 2026 to present</div><div><strong>Polemarch (Chapter President)</strong>Leading an 18-member chapter and a 6-person executive board, with an alumni newspaper reaching 200+ graduates.</div></li>
+							<li><div class="where">Kappa Alpha Psi</div><div><strong>Directed an $18,000 Gala</strong>A professional development Gala that raised $18,000 for chapter operations and St. Jude Children's Research Hospital.</div></li>
+							<li class="has-photo"><div class="where">February 28, 2024</div><div><strong>First place, Amazon Alexa mini-hackathon</strong>Won an Amazon-sponsored mini-hackathon with the "next big Amazon idea."</div><img class="wins-photo" src="images/amazon-hackathon.webp" width="750" height="1000" loading="lazy" alt="Five hackathon participants holding awards in front of a slide reading Amazon Alexa Skills Development and Mini-Hackathon"></li>
+							<li><div class="where">July 9, 2024</div><div><strong>Headstarter AI Software Engineering Fellowship</strong>Began the fellowship alongside like-minded peers focused on career growth, and built SmartCards and the Inventory Tracker during it.</div></li>
+						</ul>
+
+						<h3 class="achv-next">Academic</h3>
+						<ul class="wins">
+							<li><div class="where">Florida State University</div><div><strong>B.S. in Computer Science, 3.42 GPA</strong>Graduating May 2027.</div></li>
+							<li><div class="where">Florida State University</div><div><strong>Vires Scholarship recipient</strong></div></li>
+							<li><div class="where">Florida State University</div><div><strong>Dean's List, 4 semesters</strong></div></li>
+							<li><div class="where">Florida State University</div><div><strong>Semper Fidelis Award for Musical Excellence</strong></div></li>
+							<li><div class="where">Florida State University</div><div><strong>Renegade Leadership Honor Society</strong></div></li>
+							<li><div class="where">July 3, 2024</div><div><strong>University Honors Program</strong>Accepted into the Honors Program and the Undergraduate Research Opportunity Program.</div></li>
+							<li><div class="where">May 7, 2024</div><div><strong>CodePath Intermediate Cybersecurity, with honors</strong>Completed the course with honors. The course project is under Projects.</div></li>
+							<li><div class="where">September 2024 to July 2025</div><div><strong>Undergraduate research poster</strong>Research assistant in the Department of Computer Science with Dr. Yushun Dong. Produced a 2025 UROP poster on seizure prediction with graph neural networks, listed under Projects.</div></li>
+							<li><div class="where">Relevant coursework</div><div>Advanced Data Structures &amp; Algorithms, Operating Systems, Parallel Programming, Databases, Linear Algebra, Applied Statistics, Graph Theory, Theory of Computation</div></li>
+						</ul>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Leadership -->
+		<section class="section" id="leadership" aria-labelledby="leadership-title">
+			<div class="wrap split">
+				<h2 id="leadership-title">Leadership</h2>
+				<div>
+
+										<article class="entry">
+						<h3>Polemarch (Chapter President)</h3>
+						<p class="org">Kappa Alpha Psi Fraternity</p>
+						<p class="meta"><span>April 2026 to present</span></p>
+						<p>I lead an 18-member chapter and a 6-person executive board. Three flagship initiatives: an alumni newspaper reaching 200+ graduates, a professional development Gala that raised $18,000 for chapter operations and St. Jude Children's Research Hospital, and 10+ events per semester run with full logistics and budgeting.</p>
+					</article>
+
+					<article class="entry">
+						<h3>Chair, RSO Allocation Committee</h3>
+						<p class="org">Student Government Association</p>
+						<p class="meta"><span>May 2026 to present</span></p>
+						<p>I oversee SGA funding for FSU's 750+ registered student organizations, allocating over $100,000 per semester. I keep official committee records, including meeting minutes, attendance, and a master sheet with the evaluation rubric and RSO request guides, so every decision is documented and reproducible.</p>
+					</article>
+
+					<article class="entry">
+						<h3>Financial Allocation Coordinator, Office of the Treasurer</h3>
+						<p class="org">Student Government Association</p>
+						<p class="meta"><span>July 2026 to present</span></p>
+						<p>I support the Department of Treasurer in managing purchase requests, allocation activity, and budget monitoring across the Executive Branch, and I maintain accurate financial records.</p>
+					</article>
+
+					<article class="entry">
+						<h3>Campus Pulse Commission</h3>
+						<p class="org">Student Government Association</p>
+						<p class="meta"><span>September 2026 to present</span></p>
+						<p>I draft ballot questions that capture student sentiment on campus issues and inform decisions across university administration.</p>
+					</article>
+
+					<article class="entry">
+						<h3>Membership Chair</h3>
+						<p class="org">Forward FSU</p>
+						<p class="meta"><span>January 2026 to April 2026</span></p>
+						<p>I ran the Blazer Program, guiding 30+ students through participation, mentorship, and leadership programming that builds Student Government values and long-term engagement.</p>
+					</article>
+
+					<article class="entry">
+						<h3>President</h3>
+						<p class="org">CodeEducation at FSU</p>
+						<p class="meta"><span>December 2024 to July 2025</span></p>
+						<p>I ran weekly workshops for 20+ members on Python, JavaScript, and other languages, with hands-on coding exercises and collaborative problem-solving. I was announced as Vice President in April 2024 for the 2024 to 2025 school year and served as President from December 2024.</p>
+					</article>
+
+					<article class="entry">
+						<h3>Web Chair</h3>
+						<p class="org">Theta Tau, an engineering fraternity</p>
+						<p class="meta"><span>November 2024 to May 2025</span></p>
+						<p>I designed and managed the chapter's Wix website, adding custom features to boost engagement and outreach. I was inducted on November 16, 2024.</p>
+					</article>
+
+<div class="photos">
+						<figure>
+							<img src="images/codeducation-club-day.webp" width="1400" height="1299" loading="lazy"
+								alt="Five CodeEducation members standing behind the organization's table at Club Day">
+							<figcaption>CodeEducation at Club Day</figcaption>
+						</figure>
+						<figure>
+							<img src="images/theta-tau-class.webp" width="1000" height="749" loading="lazy"
+								alt="Theta Tau class photo with members in dark suits holding the fraternity flag">
+							<figcaption>Theta Tau class photo</figcaption>
+						</figure>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<!-- Skills -->
+		<section class="section alt" id="skills" aria-labelledby="skills-title">
+			<div class="wrap split">
+				<h2 id="skills-title">Skills</h2>
+				<dl class="spec spec-skills">
+					<dt>Languages</dt>
+					<dd>Python, Java, JavaScript, C, C++, C#, SQL, R</dd>
+					<dt>Backend and cloud</dt>
+					<dd>Node.js, Express, REST APIs, AWS, MongoDB (GridFS), MySQL, Linux/Unix</dd>
+					<dt>AI and machine learning</dt>
+					<dd>PyTorch, PyTorch Geometric, Retrieval-Augmented Generation (RAG), Pinecone, OpenAI API, Deep Graph Infomax (DGI), Temporal Convolutional Networks (TCNs)</dd>
+					<dt>Frontend and tools</dt>
+					<dd>React, Vite, Recharts, HTML/CSS, Git/GitHub, Jupyter, VS Code, IntelliJ, PyCharm, Power Apps, Power Automate, SharePoint</dd>
+				</dl>
+			</div>
+		</section>
+
+		<!-- Contact -->
+		<section class="contact on-garnet" id="contact" aria-labelledby="contact-title">
+			<div class="wrap split">
+				<h2 id="contact-title">Contact</h2>
+				<div>
+					<p class="contact-lead">I'm looking for industry roles in backend and AI/ML engineering. I graduate in Spring 2027, and I'm willing to relocate or work remotely. Email is the fastest way to reach me.</p>
+					<p><a class="email" href="mailto:ammielbowen@gmail.com">ammielbowen@gmail.com</a></p>
+					<p class="contact-links">
+						<a href="https://www.linkedin.com/in/ammielbowen" target="_blank" rel="noopener">LinkedIn</a>
+						<a href="https://github.com/Amm1el" target="_blank" rel="noopener">GitHub</a>
+						<a href="resume/Ammiel_Bowen_Professional_Resume.pdf" target="_blank" rel="noopener">Professional resume (PDF)</a>
+						<a href="resume/Ammiel_Bowen_School_Resume.pdf" target="_blank" rel="noopener">School resume (PDF)</a>
+					</p>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="site-footer">
+		<div class="wrap">
+			<p>&copy; 2026 Ammiel Bowen <span class="version">v2.0</span></p>
+			<p><a href="https://www.instagram.com/ammielbowen/" target="_blank" rel="noopener">Instagram</a></p>
+		</div>
+	</footer>
+
+	<script src="assets/js/site.js"></script>
+</body>
 </html>
