@@ -110,28 +110,30 @@
 							<div><dt>Admissions staff use it</dt><dd>50+</dd></div>
 							<div><dt>Transcripts submitted</dt><dd>10,000+</dd></div>
 							<div><dt>Institutions in the search index</dt><dd>54,000+</dd></div>
-							<div><dt>To update a transcript, down from minutes</dt><dd>Under 30 sec</dd></div>
+							<div><dt>Per transcript entry, down from over a minute</dt><dd>About 15 sec</dd></div>
 						</dl>
 
 						<ul>
-							<li>Engineered a full-stack transcript management system for FSU's Office of Admissions, replacing a manual workflow.</li>
-							<li>Built a searchable submissions dashboard, multi-chart analytics (Recharts), role-based access control (Admin, Technician, Viewer), an admin activity log with full CRUD audit trails, multi-document support, and destination-aware ID validation (EMPLID, SLATE Apply/Connect).</li>
+							<li>Sole developer of a full-stack transcript tracking system for FSU's Office of Admissions (React 19 and Vite, a Node.js and Express 5 REST API, MongoDB with Mongoose), replacing a manual workflow.</li>
+							<li>Kept the dashboard fast as records grew with server-side pagination, a compound MongoDB index, and debounced server-side filtering and sorting, plus type-ahead search across 54,000+ institutions.</li>
+							<li>Configured SAML single sign-on at the Apache server level and enforced role-based access for four staff roles through Express middleware and React route guards, with an audit trail of nine event types plus soft delete, restore, and undo.</li>
+							<li>Cut transcript entry time to about 15 seconds with returning-student autofill and destination-aware validation of EMPLID and Slate Apply/Connect IDs across the interface, API, and database schema. Deployed on an FSU Linux server behind Apache, with the API as a systemd service and a one-step release script.</li>
 							<li>The system was showcased to the Provost in executive FSU meetings and presented at the 2026 ITS RISE Showcase. <a href="#transcripter">Read the project write-up</a>.</li>
 						</ul>
 
 						<figure class="flow-figure">
 							<ol class="flow">
 								<li>
-									<strong>React (Vite) frontend</strong>
-									<span>Submission form, searchable dashboard, Recharts analytics</span>
+									<strong>React (Vite) frontend, behind Apache with SAML sign-on</strong>
+									<span>Submission form, paginated dashboard, Recharts analytics</span>
 								</li>
 								<li>
 									<strong>Node.js and Express REST API</strong>
-									<span>Role-based access, ID validation, audit log</span>
+									<span>Role checks, ID validation, audit log, paginated queries</span>
 								</li>
 								<li>
-									<strong>MongoDB with GridFS</strong>
-									<span>Transcript records and stored PDFs</span>
+									<strong>MongoDB with Mongoose</strong>
+									<span>Transcript records, staff roles, and the audit log</span>
 								</li>
 							</ol>
 							<figcaption>How a request moves through the transcript system.</figcaption>
@@ -143,8 +145,8 @@
 						<p class="org">Bastion Technologies, a NASA contractor</p>
 						<p class="meta"><span>May 2025 to present</span><span>Remote</span></p>
 						<ul>
-							<li>Designing a scalable management training system for NASA using Power Apps, Power Automate, and SharePoint. Leadership can prioritize tasks, run structured development programs, and track employee progress through automated workflows, targeting 500+ users across the agency.</li>
-							<li>Developing the platform for eventual NASA-wide deployment with a 5-person engineering team, standardizing training processes and tracking effectiveness through Power Platform analytics.</li>
+							<li>Building a 6-screen management training platform for NASA in Power Apps, with Power Fx logic, Power Automate workflows, and SharePoint data models. It moved the certificate process from paper to online and tracks whether interns and new hires are ready to take on core workload.</li>
+							<li>Validated with 20+ users in testing ahead of a planned NASA-wide rollout to 500+ users, working on a 5-person engineering team.</li>
 							<li>Produced end-user onboarding materials for the platform, including a full video walkthrough script and a comprehensive HTML tooltip reference.</li>
 						</ul>
 					</article>
@@ -199,7 +201,34 @@
 								<p>Undergraduate research with Dr. Yushun Dong in FSU's Department of Computer Science, documented in a 2025 Undergraduate Research Opportunity Program (UROP) poster. It tests whether combining graph neural network (GNN) models improves real-time seizure prediction from EEG.</p>
 								<p>EEG recordings become functional brain networks, with EEG channels as nodes and edges from Pearson correlation and mutual information. Deep Graph Infomax learns node embeddings, and a GNN-based temporal model extracts features over time. Preliminary results show accuracy in the mid-70% range, with better F1 and AUC scores than single-GNN models.</p>
 								<p class="stack">PyTorch, PyTorch Geometric, Deep Graph Infomax, EEG</p>
-								<p class="links"><a href="docs/UROP-2025-Seizure-Prediction-Poster.pdf">View the poster (PDF)</a></p>
+								<p class="links"><a href="docs/UROP-2025-Seizure-Prediction-Poster.pdf">View the poster (PDF)</a> · <a href="https://github.com/Amm1el/Seizure-Prediction-GNN" target="_blank" rel="noopener">View the code</a></p>
+							</div>
+						</article>
+
+						<article class="project" id="rso-funding-assistant">
+							<div class="shot">
+								<img src="images/projects/rso-funding-assistant.webp" width="1200" height="760" loading="lazy"
+									alt="Diagram of the RSO Funding Assistant pipeline: the Financial Manual PDF is split into sections, embedded into Postgres with pgvector, searched for each question, answered by Claude, and every citation is checked against the source text">
+							</div>
+							<div class="body">
+							<h3>RSO Funding Assistant</h3>
+							<p>As Chair of SGA's RSO Allocation Committee, I answer funding questions from student organizations every week, and most of the answers are already in the 18-page Financial Manual. This assistant answers those questions from the 2026-27 manual only, and cites the section and page.</p>
+							<p>The manual's own table of contents drives section-aware chunking, with typo-tolerant heading matching. Chunks and embeddings live in Postgres with pgvector. Claude must answer through a structured tool schema, and code checks that every quoted citation actually appears in the passage it cites; when the manual doesn't cover a question, it says so. It also runs as an MCP server, and ships with an eval set and CI that runs integration tests against a real pgvector database. In progress.</p>
+							<p class="stack">TypeScript, Node.js, Express, Postgres, pgvector, Claude API, OpenAI embeddings, MCP, Vitest, GitHub Actions</p>
+							<p class="links"><a href="https://github.com/Amm1el/RSO-Funding-Assistant" target="_blank" rel="noopener">View the code</a></p>
+							</div>
+						</article>
+
+						<article class="project">
+							<div class="shot">
+								<img src="images/projects/rate-my-professor-rag.webp" width="1200" height="760" loading="lazy"
+									alt="Diagram of the Rate My Professor RAG pipeline: reviews are embedded with OpenAI into Pinecone, the top matches are retrieved for each question, and gpt-4o-mini streams an answer">
+							</div>
+							<div class="body">
+							<h3>Rate My Professor RAG</h3>
+							<p>A retrieval-augmented assistant for finding professors. Reviews are embedded with OpenAI's text-embedding-3-small and stored in Pinecone; each question retrieves the closest reviews, and gpt-4o-mini streams an answer grounded in them to a Next.js chat interface.</p>
+							<p class="stack">Next.js, OpenAI API, Pinecone, Vercel</p>
+							<p class="links"><a href="https://rate-my-professor-pink.vercel.app/" target="_blank" rel="noopener">Open the live site</a> · <a href="https://github.com/Amm1el/Rate-My-Professor-RAG" target="_blank" rel="noopener">View the code</a></p>
 							</div>
 						</article>
 
@@ -210,9 +239,9 @@
 							</div>
 							<div class="body">
 							<h3>Computational Neuroscience Chatbot</h3>
-							<p>A retrieval-augmented generation (RAG) chatbot for computational neuroscience. A Node.js and AWS backend retrieves relevant material from a Pinecone vector database so answers are grounded in source text, and it orchestrates external API calls.</p>
-							<p class="stack">Node.js, AWS, Pinecone, RAG</p>
-							<p class="links"><a href="https://youtu.be/XsZQaDHMvXk" target="_blank" rel="noopener">Watch the demo</a></p>
+							<p>A retrieval-augmented generation (RAG) support chatbot for computational neuroscience students. A Next.js API route sends each question to Amazon Bedrock Knowledge Bases, which retrieves passages from a Pinecone vector index and generates an answer grounded in that source material rather than the model's training data alone.</p>
+							<p class="stack">Next.js, Node.js, Amazon Bedrock, Pinecone, RAG</p>
+							<p class="links"><a href="https://youtu.be/XsZQaDHMvXk" target="_blank" rel="noopener">Watch the demo</a> · <a href="https://github.com/Amm1el/Computational-Neuroscience-Chatbot" target="_blank" rel="noopener">View the code</a></p>
 							</div>
 						</article>
 
@@ -224,7 +253,8 @@
 							<div class="body">
 							<h3>SmartCards</h3>
 							<p>An AI-powered flashcard generator. Paste in your notes and it turns them into study flashcards you can open on any device. Built during the Headstarter AI Software Engineering Fellowship.</p>
-							<p class="links"><a href="https://ai-flashcards-black.vercel.app/" target="_blank" rel="noopener">Open the live site</a></p>
+							<p class="stack">Next.js, OpenAI API, Firebase Firestore, Clerk, Stripe</p>
+							<p class="links"><a href="https://ai-flashcards-black.vercel.app/" target="_blank" rel="noopener">Open the live site</a> · <a href="https://github.com/Amm1el/SmartCards" target="_blank" rel="noopener">View the code</a></p>
 							</div>
 						</article>
 
@@ -236,7 +266,8 @@
 							<div class="body">
 							<h3>Inventory Tracker</h3>
 							<p>A web-based inventory tracker with item search, running totals for quantity, items, additions, and deletions, and a recent-activity log. Built during the Headstarter AI Software Engineering Fellowship.</p>
-							<p class="links"><a href="https://inventory-tracker-delta.vercel.app/" target="_blank" rel="noopener">Open the live site</a></p>
+							<p class="stack">Next.js, Material UI, Firebase Firestore</p>
+							<p class="links"><a href="https://inventory-tracker-delta.vercel.app/" target="_blank" rel="noopener">Open the live site</a> · <a href="https://github.com/Amm1el/Inventory-Tracker" target="_blank" rel="noopener">View the code</a></p>
 							</div>
 						</article>
 
@@ -265,7 +296,7 @@
 
 						<h3>Professional</h3>
 						<ul class="wins">
-							<li><div class="where">FSU Office of Admissions</div><div><strong>Cut transcript updates from minutes to under 30 seconds</strong>The transcript system I built now holds 10,000+ submitted transcripts and is used by 50+ Admissions staff.</div></li>
+							<li><div class="where">FSU Office of Admissions</div><div><strong>Cut transcript entry from over a minute to about 15 seconds</strong>The transcript system I built now holds 10,000+ submitted transcripts and is used by 50+ Admissions staff.</div></li>
 							<li><div class="where">FSU executive meetings</div><div><strong>Transcript system showcased to the Provost</strong>Shown in executive FSU meetings.</div></li>
 							<li><div class="where">FSU ITS, 2026</div><div><strong>Presented at the 2026 ITS RISE Showcase</strong>Presented the Transcripter, an internal system built for the Office of Admissions.</div></li>
 							<li><div class="where">Bastion Technologies</div><div><strong>Building a training system for NASA</strong>Designing a Power Platform system that targets 500+ users across the agency, with a 5-person engineering team.</div></li>
@@ -373,11 +404,11 @@
 					<dt>Languages</dt>
 					<dd>Python, Java, JavaScript, C, C++, C#, SQL, R</dd>
 					<dt>Backend and cloud</dt>
-					<dd>Node.js, Express, REST APIs, AWS, MongoDB (GridFS), MySQL, Linux/Unix</dd>
+					<dd>Node.js, Express, REST APIs, MongoDB and Mongoose, Postgres with pgvector, MySQL, SQLite, AWS, Apache, SAML SSO, Linux/Unix</dd>
 					<dt>AI and machine learning</dt>
-					<dd>PyTorch, PyTorch Geometric, Retrieval-Augmented Generation (RAG), Pinecone, OpenAI API, Deep Graph Infomax (DGI), Temporal Convolutional Networks (TCNs)</dd>
+					<dd>Retrieval-Augmented Generation (RAG), Pinecone, pgvector, OpenAI API, Claude API, Amazon Bedrock, MCP, PyTorch, PyTorch Geometric, Deep Graph Infomax (DGI), Temporal Convolutional Networks (TCNs)</dd>
 					<dt>Frontend and tools</dt>
-					<dd>React, Vite, Recharts, HTML/CSS, Git/GitHub, Jupyter, VS Code, IntelliJ, PyCharm, Power Apps, Power Automate, SharePoint</dd>
+					<dd>React, Next.js, Vite, Recharts, Material UI, HTML/CSS, Git/GitHub, Claude Code, Jupyter, VS Code, Power Apps, Power Automate, SharePoint</dd>
 				</dl>
 			</div>
 		</section>
