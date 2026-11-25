@@ -296,7 +296,7 @@ h3 { font-weight: 600; font-size: 1.3rem; line-height: 1.25; }
 .project h3 { margin: 0 0 0.45rem; }
 .project p { margin: 0 0 0.7rem; max-width: 56ch; }
 .project .stack { color: var(--slate); font-size: 0.9375rem; }
-@media (max-width: 40rem) { .project .links { margin-bottom: 0; }
+@media (max-width: 40rem) { .project .links { margin-bottom: 0; } }
 .project .links a { font-weight: 600; }
 @media (max-width: 40rem) {
 	.project { grid-template-columns: 1fr; }
@@ -317,6 +317,9 @@ h3 { font-weight: 600; font-size: 1.3rem; line-height: 1.25; }
 /* ---------- Highlights ---------- */
 
 .achv h3 { margin: 0 0 0.9rem; }
+.feature-photo { margin: 0 0 1.25rem; }
+.feature-photo img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 4px; }
+.feature-photo figcaption { margin-top: 0.6rem; font-size: 0.9rem; color: var(--slate); }
 .achv .achv-next { margin-top: 3rem; }
 .wins { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
 .wins li {
